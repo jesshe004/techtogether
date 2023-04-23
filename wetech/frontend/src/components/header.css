@@ -1,0 +1,16 @@
+.header {
+    display: flex; 
+    font-size: 125px; 
+    margin-left: 1em;
+    margin-bottom: 0px;
+}
+
+.header a {
+    color: #B99095;
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.header a:hover {
+    color: black; 
+}
