@@ -1,10 +1,14 @@
 import React from 'react'; 
-import '../components/landpage.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {Header} from './header';
+import {SignUp} from '../components/quiz'
+import '../components/quiz.css'
+import {About} from './about';
 
 export const LandingPage = () => {
      return (
-       
+        <div>
+        <p> hello </p>
+        <a href = "http://scaiproject.github.io"> SCAI </a>
+        </div>
      );
 }

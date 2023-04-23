@@ -56,47 +56,47 @@ export const SignUp = () => {
                     </label>
 
                     <label className='signUpFieldTitles'> Cap
-                    <input type="checkbox" name="Yes or No" className="signUpFields"/>
+                    <input id = "remember_me" type="checkbox" name="Yes or No" className="signUpFields"/>
                     </label>
 
                     <label className='signUpFieldTitles'> Pill
-                    <input type="checkbox" name="Yes or No" className="signUpFields"/>
+                    <input id = "remember_me" type="checkbox" name="Yes or No" className="signUpFields"/>
                     </label>
 
                     <label className='signUpFieldTitles'> Condoms
-                    <input type="checkbox" name="Yes or No" className="signUpFields"/>
+                    <input id = "remember_me" type="checkbox" name="Yes or No" className="signUpFields"/>
                     </label>
 
                     <label className='signUpFieldTitles'> Implan
-                    <input type="checkbox" name="Yes or No" className="signUpFields"/>
+                    <input id = "remember_me" type="checkbox" name="Yes or No" className="signUpFields"/>
                     </label>
 
                     <label className='signUpFieldTitles'> Injections
-                    <input type="checkbox" name="Yes or No" className="signUpFields"/>
+                    <input id = "remember_me" type="checkbox" name="Yes or No" className="signUpFields"/>
                     </label>
 
                     <label className='signUpFieldTitles'> FemaleC
-                    <input type="checkbox" name="Yes or No" className="signUpFields"/>
+                    <input id = "remember_me" type="checkbox" name="Yes or No" className="signUpFields"/>
                     </label>
 
                     <label className='signUpFieldTitles'> IUD
-                    <input type="checkbox" name="Yes or No" className="signUpFields"/>
+                    <input id = "remember_me" type="checkbox" name="Yes or No" className="signUpFields"/>
                     </label>
 
                     <label className='signUpFieldTitles'> IUS
-                    <input type="checkbox" name="Yes or No" className="signUpFields"/>
+                    <input  id = "remember_me" type="checkbox" name="Yes or No" className="signUpFields"/>
                     </label>
 
                     <label className='signUpFieldTitles'> Progestogen
-                    <input type="checkbox" name="Yes or No" className="signUpFields"/>
+                    <input id = "remember_me" type="checkbox" name="Yes or No" className="signUpFields"/>
                     </label>
 
                     <label className='signUpFieldTitles'> Ring
-                    <input type="checkbox" name="Yes or No" className="signUpFields"/>
+                    <input  id = "remember_me" type="checkbox" name="Yes or No" className="signUpFields"/>
                     </label>
 
                     <label className='signUpFieldTitles'> Advising
-                    <input type="checkbox" name="Yes or No" className="signUpFields"/>
+                    <input id = "remember_me" type="checkbox" name="Yes or No" className="signUpFields"/>
                     </label>
             </form>
         </div>

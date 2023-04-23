@@ -7,9 +7,8 @@ import {LandingPage} from './components/landingpage';
 function App() {
   return (
     <div> 
-
       <Routes>
-        <Route path = "/landingpage" element = {<LandingPage/>}> </Route>
+        <Route path = "/landingpage" element = {<LandingPage/>}/>
       </Routes>
 
       </div>
