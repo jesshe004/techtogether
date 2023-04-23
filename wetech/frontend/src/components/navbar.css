@@ -1,0 +1,29 @@
+*{
+    font-family: 'Inter', sans-serif;
+    background-color: #3D5B59;
+}
+
+.navbar {
+    display: flex; 
+    color: black; 
+    font-size: bold;
+    margin: 0 auto; 
+}
+
+.navbar .links {
+    margin-top: 2em;
+    margin-left: auto; 
+}
+
+.navbar a {
+    margin-right: 2em;
+    text-decoration: none;
+    font-size: 25px;
+    color: #B99095; 
+}
+
+.navbar a:hover {
+    color: black; 
+}
+
+
