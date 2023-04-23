@@ -1,5 +1,6 @@
 -- CreateTable
 CREATE TABLE `Clinics` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(255) NOT NULL,
     `address` VARCHAR(255) NOT NULL,
     `latitude` DOUBLE NOT NULL,
