@@ -8,6 +8,7 @@ NavBtn,
 NavBtnLink,
 } from './Navvy';
 import "./landingpage.tsx"
+import "./quiz.tsx"
 
 const Navbar = () => {
 return (
@@ -22,7 +23,7 @@ return (
 		<NavLink to='/about'>
 			About
 		</NavLink>
-		<NavLink to='/form'>
+		<NavLink to='/quiz'>
 			Form
 		</NavLink>
 		{/* Second Nav */}
