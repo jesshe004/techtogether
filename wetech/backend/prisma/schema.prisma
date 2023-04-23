@@ -6,3 +6,24 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model Clinics {
+  id        Int      @id @default(autoincrement())
+  name      String   @db.VarChar(255)
+  address   String   @db.VarChar(255)
+  latitude  Float    
+  longitude Float
+  financial Boolean  @default(false)
+  caps      Boolean  @default(false)
+  pill      Boolean  @default(false)
+  condoms   Boolean  @default(false)
+  implan    Boolean  @default(false)
+  injection Boolean  @default(false)
+  femalec Boolean @default(false)
+  IUD       Boolean @default(false)
+  IUS       Boolean @default(false)
+  progestogen Boolean @default(false)
+  ring      Boolean @default(false)
+  advising  Boolean @default(false)
+}
+
