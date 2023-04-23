@@ -1,6 +1,5 @@
 -- CreateTable
 CREATE TABLE `Clinics` (
-    `id` INTEGER NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(255) NOT NULL,
     `address` VARCHAR(255) NOT NULL,
     `latitude` DOUBLE NOT NULL,
@@ -9,7 +8,7 @@ CREATE TABLE `Clinics` (
     `caps` BOOLEAN NOT NULL DEFAULT false,
     `pill` BOOLEAN NOT NULL DEFAULT false,
     `condoms` BOOLEAN NOT NULL DEFAULT false,
-    `implan` BOOLEAN NOT NULL DEFAULT false,
+    `implant` BOOLEAN NOT NULL DEFAULT false,
     `injection` BOOLEAN NOT NULL DEFAULT false,
     `femalec` BOOLEAN NOT NULL DEFAULT false,
     `IUD` BOOLEAN NOT NULL DEFAULT false,
@@ -22,20 +21,30 @@ CREATE TABLE `Clinics` (
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 
-INSERT INTO Clinics (name, address, latitude, longitude, financial, caps, pill, condoms, implan, injection, femalec, IUD, IUS, progestogen, ring, advising)
+INSERT INTO Clinics (name, address, latitude, longitude, financial, caps, pill, condoms, implant, injection, femalec, IUD, IUS, progestogen, ring, advising)
 VALUES
-  ('Emily White', '678 Pine St, Uptown USA', 41.8781, -87.6298, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE),
-  ('Mike Brown', '910 Cedar Ave, Northtown USA', 39.9526, -75.1652, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE),
-  ('Rachel Davis', '111 Oakwood Dr, Easttown USA', 37.7749, -122.4194, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE),
-  ('David Kim', '222 Maple Rd, Westtown USA', 34.0522, -118.2437, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE),
-  ('Susan Chang', '333 Elm St, Downtown USA', 40.7128, -74.0060, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE),
-  ('Jason Lee', '444 Cedar Ave, Southtown USA', 37.3382, -121.8863, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE),
-  ('Linda Chen', '555 Oakwood Dr, Northtown USA', 42.3601, -71.0589, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE),
-  ('Peter Smith', '666 Maple Rd, Westtown USA', 33.6846, -117.8265, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE),
-  ('Grace Lee', '777 Elm St, Downtown USA', 40.4406, -79.9959, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE),
-  ('John Doe', '123 Main St, Anytown USA', 40.7128, -74.0060, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE),
-  ('Jane Smith', '456 Maple Ave, Smallville USA', 38.9717, -95.2353, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE),
-  ('Bob Johnson', '789 Oak St, Bigtown USA', 47.6062, -122.3321, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE),
-  ('Sarah Lee', '101 Elm St, Hometown USA', 35.2271, -80.8431, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE),
-  ('Tom Wilson', '246 Cherry St, Midtown USA', 42.3601, -71.0589, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE);
-  ('Alex Kim', '888 Pine St, Uptown USA', 47.6062, -122.3321, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE);
+  ('Vitality Medical Clinic', '678 Pine St, Uptown USA', 32.2969, -86.3433, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE),
+  ('Harmony Health Clinic', '910 Cedar Ave, Northtown USA', 33.4504, -88.8184, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE),
+  ('Serenity Wellness Clinic', '111 Oakwood Dr, Easttown USA', 33.9689, -83.3747, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE),
+  ('Bright Horizons Clinic', '222 Maple Rd, Westtown USA', 34.5037, -91.5506, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE),
+  ('Elite Care Clinic', '333 Elm St, Downtown USA', 34.7998, -87.6773, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE),
+  ('Healing Hands Clinic', '444 Cedar Ave, Southtown USA', 35.3877, -79.9853, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE),
+  ('Progressive Health Clinic', '555 Oakwood Dr, Northtown USA', 35.7426, -83.9322, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE),
+  ('Compassionate Care Clinic', '666 Maple Rd, Westtown USA', 36.2053, -86.7121, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE),
+  ('Renewal Medical Clinic', '777 Elm St, Downtown USA', 36.6023, -88.8157, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE),
+  ('Apex Health Clinic', '123 Main St, Anytown USA', 36.8345, -76.3519, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE),
+  ('WellSpring Health Clinic', '456 Maple Ave, Smallville USA', 37.0842, -88.6415, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE),
+  ('Pure Life Medical Clinic', '789 Oak St, Bigtown USA', 37.9792, -87.4972, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE),
+  ('Nourish Health Clinic', '101 Elm St, Hometown USA', 38.4039, -82.5700 , FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE),
+  ('Sage Medical Center', '246 Cherry St, Midtown USA', 38.8786, -94.7783 , TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE),
+  ('Unity Health Clinic', '888 Pine St, Uptown USA', 39.0760, -84.4681, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE),
+  ('Serenity Medical Center', '1234 Main St, Birmingham, AL 35203', 33.5207, -86.8025, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1),
+  ('Bright Horizons Clinic', '5678 Oak St, Tupelo, MS 38801', 34.2588, -88.7034, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1),
+  ('Harmony Health Clinic', '9012 Maple Ave, Athens, GA 30601', 33.9600, -83.3739, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1),
+  ('Tranquility Medical Center', '3456 Elm St, Jonesboro, AR 72401', 35.8259, -90.7054, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1),
+  ('Renewal Medical Clinic', '7890 Walnut St, Tuscaloosa, AL 35401', 33.2077, -87.5850, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0),
+  ('Healing Hands Clinic', '4321 Pine St, Raleigh, NC 27601', 35.7735, -78.6355, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0),
+  ('Progressive Health Clinic', '2345 Cedar Ave, Nashville, TN 37201', 36.1622, -86.7744, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1),
+  ('Compassionate Care Clinic', '6789 Oak St, Memphis, TN 38103', 35.1403, -90.0457, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1),
+  ('Pure Life Medical Clinic', '1111 Pine St, Tupelo, MS 38801', 34.2588, -88.7034, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0),
+  ('Nourish Health Clinic', '2222 Cedar Ave, Athens, GA 30601', 33.9600, -83.3739, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1);
